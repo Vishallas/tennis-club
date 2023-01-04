@@ -1,0 +1,9 @@
+{% extends "master.html" %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'myfirst.css' %}">
+{% block content %}
+{% for x in fruits %}
+<h1>{{x}}</h1>
+{% endfor %}
+<p> In views.py you can see what the fruits variable looks like.</p>
+{%endblock%}
